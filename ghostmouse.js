@@ -19,29 +19,27 @@ function draw(){
     let y=random(-3,3);
     push();
 scale(.5);
-    image(person,mouseX,mouseY+y);
+    image(person,mouseX*2,mouseY*2);
 pop();
     push();
 scale(0.7);
 image(inlands,xroom,yroom);
 pop();
-}
 
-function keyPressed() {
-    if (keyCode === LEFT_ARROW) {
-   
+if (keyIsDown(LEFT_ARROW)) {
     xroom=xroom+10;
-     } else if (keyCode === RIGHT_ARROW) {
-    
+     } 
+      if (keyIsDown(RIGHT_ARROW)) {
     xroom=xroom-10;
-    }else if (keyCode === UP_ARROW) {
+    }
+    if (keyIsDown(UP_ARROW)) {
         yroom=yroom+10;
 
         }
-        else if (keyCode === DOWN_ARROW) {
-           
+    if (keyIsDown(DOWN_ARROW)) {
             yroom=yroom-10;
 
             }
 
 }
+
