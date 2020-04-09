@@ -11,7 +11,13 @@ function setup(){
     let canvas=createCanvas(windowWidth,windowHeight);
     canvas.position(0,0);
     frameRate(10);
+
+    let postcards = selectAll('.polaroid');
+for (let i = 0; i < postcards.length; i++) {
     
+    postcards[i].position(random(width-500), random(height-500));
+    
+}
 }
 
 function draw(){
@@ -22,7 +28,7 @@ scale(.5);
     image(person,mouseX*2,mouseY*2);
 pop();
     push();
-scale(0.7);
+// scale(0.7);
 image(inlands,xroom,yroom);
 pop();
 
