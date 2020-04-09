@@ -12,7 +12,7 @@ let h;
 let input;
 let button;
 function preload(){
-    room=loadImage('room07042020.png');
+    room=loadImage('room09042020.png');
     person=loadImage('ghosty.png')
 }
 
@@ -38,7 +38,7 @@ function setup(){
      button.mousePressed(greet);
    
      greeting = createElement('h2', '. . .');
-   
+   greeting.style('font-weight','bold')
      textAlign(CENTER);
      textSize(50); 
 
