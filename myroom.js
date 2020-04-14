@@ -12,7 +12,7 @@ let h;
 let input;
 let button;
 function preload(){
-    room=loadImage('room09042020.png');
+    room=loadImage('room14042020.png');
     person=loadImage('ghosty.png')
 }
 
