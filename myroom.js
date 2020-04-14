@@ -64,7 +64,7 @@ function draw(){
 frameRate(10);
 
 push();
-scale(0.7);
+// scale(0.9);
 image(room,xroom,yroom);
 pop();
 
