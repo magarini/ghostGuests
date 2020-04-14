@@ -21,7 +21,7 @@ function setup(){
     canvas.parent('container');
     x=width;
     y=height-50;
-    xroom=-width;
+    xroom=-width+1000;
     yroom=-height;
 
      d = day();
