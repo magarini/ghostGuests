@@ -1,8 +1,11 @@
 let person;
 let xroom=-200;
 let yroom=-200;
+let kannavos;
 function preload(){
-    person=loadImage('ghosty.png')
+    person=loadImage('ghosty.png');
+    kannavos=loadImage('kannavos.png');
+
 }
 
 function setup(){
@@ -20,6 +23,12 @@ for (let i = 0; i < postcards.length; i++) {
 
 function draw(){
     clear();
+    push();
+    scale(.6);
+    tint(255, 80); // Apply transparency without changing color
+
+    image(kannavos,0,0);
+    pop();
     let y=random(-3,3);
     push();
 scale(.5);
